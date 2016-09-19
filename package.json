@@ -1,0 +1,28 @@
+{
+  "name": "rdtowgs",
+  "version": "1.0.0",
+  "description": "Translates an RD (Rijksdriehoek) coordinate to WGS 84.",
+  "main": "rdtowgs.js",
+  "scripts": {
+  },
+  "devDependencies": {
+  },
+  "keywords": [
+    "rd",
+    "rijksdriehoek",
+    "wgs",
+    "coordinates"
+  ],
+  "repository": {
+    "url": "git@github.com:tristandb/rdtowgs.git",
+    "type": "git"
+  },
+  "author": "Tristan de Boer",
+  "maintainers": [
+    {
+      "name": "Tristan de Boer",
+      "email": "spam@tristandeboer.nl"
+    }
+  ],
+  "license": "MIT"
+}
