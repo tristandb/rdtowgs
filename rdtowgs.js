@@ -1,8 +1,19 @@
 module.exports = rdtowgs;
 
+Number.prototype.padFunction = function(padStr, len) {
+    var num = this.toString();
+    while (num.length < len){
+	num = num + padStr;
+    }
+    console.log(num);
+    return parseInt(num);
+}
+
 function rdtowgs(x, y) {
-    var dX = (x * 10 - 155000) * Math.pow(10, -5);
-    var dY = (y * 10 - 463000) * Math.pow(10, -5);
+    y = y.padFunction("5", 6);
+    x = x.padFunction("5", 6);
+    var dX = (x - 155000) * Math.pow(10, -5);
+    var dY = (y - 463000) * Math.pow(10, -5);
 
     var SomN = (3235.65389 * dY) + ( -32.58297 * Math.pow(dX, 2)) + (-0.2475 * Math.pow(dY, 2)) +
         (-0.84978 * Math.pow(dX, 2) * dY) + (-0.0655 * Math.pow(dY, 3)) +
