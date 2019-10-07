@@ -1,6 +1,6 @@
 {
   "name": "rdtowgs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Translates an RD (Rijksdriehoek) coordinate to WGS 84.",
   "main": "rdtowgs.js",
   "scripts": {
